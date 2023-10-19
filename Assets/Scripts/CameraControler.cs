@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraControler : MonoBehaviour
@@ -10,11 +9,7 @@ public class CameraControler : MonoBehaviour
     public Camera mainCamera;
     public float lerpSpeed;
     public Vector2 border;
-    bool dead = false;
-
-    public MeshRenderer soilMesh;
-    public Gradient soilGradient;
-
+    
     private void Update() {
 
         if(gm.rootControler.dead){
@@ -26,7 +21,6 @@ public class CameraControler : MonoBehaviour
         }
 
         float depthSoil = mainCamera.transform.position.y/-200f;
-        soilMesh.material.color = soilGradient.Evaluate(depthSoil);
     }
 
     public void Death(){
