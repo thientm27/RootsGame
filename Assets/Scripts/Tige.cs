@@ -30,14 +30,14 @@ public class Tige : MonoBehaviour {
     }
 
     IEnumerator Grow(){
-        flowers[0].localScale = Vector3.one;
-        flowers[1].localScale = Vector3.zero;
-        flowers[2].localScale = Vector3.zero;
-        flowers[3].localScale = Vector3.zero;
+        // flowers[0].localScale = Vector3.one;
+        // flowers[1].localScale = Vector3.zero;
+        // flowers[2].localScale = Vector3.zero;
+        // flowers[3].localScale = Vector3.zero;
         float t = 0;
         while (t < 1f)
         {
-            transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one, t);
+            // transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one, t);
             t += Time.deltaTime * 5f * Mathf.Max(1, gM.rootControler.depth / 200f);
             yield return null;
         }
@@ -47,7 +47,7 @@ public class Tige : MonoBehaviour {
             float tp = 0;
             while (tp < 1f)
             {
-                flowerPetals[i].localScale = Vector3.Lerp(flowerPetals[i].localScale, Vector3.one, tp);
+                // flowerPetals[i].localScale = Vector3.Lerp(flowerPetals[i].localScale, Vector3.one, tp);
                 tp += Time.deltaTime * 25f;
                 yield return null;
             }
@@ -62,12 +62,12 @@ public class Tige : MonoBehaviour {
             }
             if(i == 4){
                 tp = 0;
-                flowers[0].localScale = Vector3.one * 2f;
+                // flowers[0].localScale = Vector3.one * 2f;
                 gM.cash ++;
                 gM.sfx.PlayNoteSFX((i+baseTone)/5);
                 while (tp < 1f)
                 {
-                    flowers[0].localScale = Vector3.Lerp(flowers[0].localScale, Vector3.one, tp);
+                    // flowers[0].localScale = Vector3.Lerp(flowers[0].localScale, Vector3.one, tp);
                     tp += Time.deltaTime * 10f;
                     yield return null;
                 }
@@ -76,40 +76,40 @@ public class Tige : MonoBehaviour {
             }
             if(i == 9){
                 tp = 0;
-                flowers[1].localScale = Vector3.one * 2f;
+                // flowers[1].localScale = Vector3.one * 2f;
                 gM.cash ++;
                 gM.sfx.PlayNoteSFX((i+baseTone)/5);
                 while (tp < 1f)
                 {
-                    flowers[1].localScale = Vector3.Lerp(flowers[1].localScale, Vector3.one, tp);
+                    // flowers[1].localScale = Vector3.Lerp(flowers[1].localScale, Vector3.one, tp);
                     tp += Time.deltaTime * 10f;
                     yield return null;
                 }
-                flowers[2].localScale = Vector3.one;
+                // flowers[2].localScale = Vector3.one;
 
             }
             if(i == 14){
                 tp = 0;
-                flowers[2].localScale = Vector3.one * 2f;
+                // flowers[2].localScale = Vector3.one * 2f;
                 gM.cash ++;
                 gM.sfx.PlayNoteSFX((i+baseTone)/5);
                 while (tp < 1f)
                 {
-                    flowers[2].localScale = Vector3.Lerp(flowers[2].localScale, Vector3.one, tp);
+                    // flowers[2].localScale = Vector3.Lerp(flowers[2].localScale, Vector3.one, tp);
                     tp += Time.deltaTime * 10f;
                     yield return null;
                 }
-                flowers[3].localScale = Vector3.one;
+                // flowers[3].localScale = Vector3.one;
 
             }
             if(i == 19){
                 tp = 0;
-                flowers[3].localScale = Vector3.one * 2f;
+                // flowers[3].localScale = Vector3.one * 2f;
                 gM.cash ++;
                 gM.sfx.PlayNoteSFX((i+baseTone)/5);
                 while (tp < 1f)
                 {
-                    flowers[3].localScale = Vector3.Lerp(flowers[3].localScale, Vector3.one, tp);
+                    // flowers[3].localScale = Vector3.Lerp(flowers[3].localScale, Vector3.one, tp);
                     tp += Time.deltaTime * 10f;
                     yield return null;
                 }

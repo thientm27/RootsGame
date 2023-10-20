@@ -70,6 +70,10 @@ public class UIManager : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Mọc hoa
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ShowDeathUIRoutine(){
         deathUI.SetActive(true);
 
@@ -81,6 +85,7 @@ public class UIManager : MonoBehaviour
                 yield return null;
             }
         }
+        
         foreach (Capacity cap in capacities)
         {
             cap.Initialize();
