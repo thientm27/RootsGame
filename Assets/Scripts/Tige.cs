@@ -48,7 +48,7 @@ public class Tige : MonoBehaviour {
             while (tp < 1f)
             {
                 // flowerPetals[i].localScale = Vector3.Lerp(flowerPetals[i].localScale, Vector3.one, tp);
-                tp += Time.deltaTime * 25f;
+                tp += Time.deltaTime * 100f;
                 yield return null;
             }
             if(i == 5){
@@ -68,7 +68,7 @@ public class Tige : MonoBehaviour {
                 while (tp < 1f)
                 {
                     // flowers[0].localScale = Vector3.Lerp(flowers[0].localScale, Vector3.one, tp);
-                    tp += Time.deltaTime * 10f;
+                    tp += Time.deltaTime * 1000f;
                     yield return null;
                 }
                 flowers[1].localScale = Vector3.one;
@@ -82,7 +82,7 @@ public class Tige : MonoBehaviour {
                 while (tp < 1f)
                 {
                     // flowers[1].localScale = Vector3.Lerp(flowers[1].localScale, Vector3.one, tp);
-                    tp += Time.deltaTime * 10f;
+                    tp += Time.deltaTime * 1000f;
                     yield return null;
                 }
                 // flowers[2].localScale = Vector3.one;
@@ -96,7 +96,7 @@ public class Tige : MonoBehaviour {
                 while (tp < 1f)
                 {
                     // flowers[2].localScale = Vector3.Lerp(flowers[2].localScale, Vector3.one, tp);
-                    tp += Time.deltaTime * 10f;
+                    tp += Time.deltaTime * 1000f;
                     yield return null;
                 }
                 // flowers[3].localScale = Vector3.one;
@@ -110,7 +110,7 @@ public class Tige : MonoBehaviour {
                 while (tp < 1f)
                 {
                     // flowers[3].localScale = Vector3.Lerp(flowers[3].localScale, Vector3.one, tp);
-                    tp += Time.deltaTime * 10f;
+                    tp += Time.deltaTime * 1000f;
                     yield return null;
                 }
             }

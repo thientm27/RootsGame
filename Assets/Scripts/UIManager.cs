@@ -98,7 +98,7 @@ public class UIManager : MonoBehaviour
     }
 
     IEnumerator ShowEndUIRoutine(){
-        scoreUI.SetActive(false);
+        scoreUI.SetActive(true);
         for (var i = 0; i <= 10; i++)
         {
             int leftover = Mathf.Min(20, 2000 - i*20);
