@@ -25,5 +25,7 @@ public class Water : MonoBehaviour
             waterContent-=Time.deltaTime;
             yield return null;
         }
+
+        myRenderer.enabled = false;
     }
 }
