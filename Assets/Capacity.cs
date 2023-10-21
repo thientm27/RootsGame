@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections;
+﻿
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Capacity : MonoBehaviour
 {
+    public TreeGrowManager treeGrowManager;
     public GM gM;
     public int capacityID;
     public int level;
@@ -56,7 +56,9 @@ public class Capacity : MonoBehaviour
         }else{
             costText.text = "MAX";
         }
+        
+        treeGrowManager.CheckVar();
     }
 
-
+    
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,5 +43,15 @@ public class GM : MonoBehaviour
     public void ResetProgress(){
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(0);
+    }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+          //  var cash = PlayerPrefs.GetInt("Cash", 0);
+            cash += 5;
+           // PlayerPrefs.SetInt("Cash", 5);
+        }
     }
 }
