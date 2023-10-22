@@ -234,6 +234,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5741174448488666723, guid: 29bd1b6e47adf91479902ea5231713f5,
         type: 3}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.26884374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.42151082
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0009
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0029
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846458917013849696, guid: 6870ff8e000bb244aa75cecf0b0a9814,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7524947470854454266, guid: 6870ff8e000bb244aa75cecf0b0a9814,
         type: 3}
       propertyPath: m_RootOrder

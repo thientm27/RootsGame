@@ -128,6 +128,7 @@ public class RootControler : MonoBehaviour
             if(poison!=null){
                 gM.sfx.HurtSfx();
                 poisonned = Mathf.Min(4f,poisonned + 1f);
+                poison.Destroy();
                 Move();
             }
 

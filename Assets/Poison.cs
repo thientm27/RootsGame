@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Poison : MonoBehaviour
 {
-    
+    public void Destroy()
+    {
+        gameObject.SetActive(false);
+    }
 }
